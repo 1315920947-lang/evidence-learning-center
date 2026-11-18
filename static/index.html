@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>全球体检与健康管理循证研修中心</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <span class="logo">✚</span>
+        <div>
+          <strong>全球体检与健康管理</strong
+          ><small>循证研修中心 · EVIDENCE LEARNING</small>
+        </div>
+      </div>
+      <div class="topright">
+        <span id="clock"></span
+        ><button
+          id="theme"
+          class="ghost"
+          aria-label="切换主题"
+          title="切换主题"
+        >
+          ◐
+        </button>
+      </div>
+    </header>
+    <div class="shell">
+      <aside>
+        <nav id="nav">
+          <button data-page="home" class="active">◫　今日研修</button
+          ><button data-page="archive">▦　每日课程档案</button
+          ><button data-page="papers">▤　循证文献库</button
+          ><button data-page="topics">◈　专题知识库</button
+          ><button data-page="cases">☑　临床案例训练</button
+          ><button data-page="tools">▣　健康管理工具库</button
+          ><button data-page="profile">◎　我的学习中心</button>
+        </nav>
+        <div class="sidefoot">
+          数据保存在当前服务器<br /><span id="syncStatus"
+            >正在检查同步状态</span
+          >
+        </div>
+      </aside>
+      <main id="main"><div class="loading">正在加载研修中心…</div></main>
+    </div>
+    <dialog id="credentials">
+      <form method="dialog">
+        <label for="access-token">学习中心与写入访问口令</label
+        ><input
+          id="access-token"
+          type="password"
+          autocomplete="current-password"
+        />
+        <div class="actions">
+          <button class="btn secondary" value="cancel">取消</button
+          ><button class="btn" value="confirm">确认</button>
+        </div>
+      </form>
+    </dialog>
+    <div id="toast" role="status"></div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
