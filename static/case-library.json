@@ -1,0 +1,760 @@
+[
+  {
+    "id": "ast",
+    "level": "初级",
+    "title": "孤立 AST 升高：为什么最后查了巨 AST？",
+    "tags": [
+      "肝酶",
+      "转氨酶",
+      "AST",
+      "化验异常"
+    ],
+    "related": [
+      "masld"
+    ],
+    "dailyDay": "",
+    "guidelines": [
+      [
+        "ACG 肝生化异常评估指南",
+        "https://gi.org/guideline/evaluation-of-abnormal-liver-chemistries/"
+      ],
+      [
+        "ACG 肝生化指南官方摘要（PubMed 纯文本）",
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=27995906&rettype=abstract&retmode=text"
+      ]
+    ],
+    "source": {
+      "title": "Isolated elevated aspartate aminotransferase in an asymptomatic woman due to macro-aspartate aminotransferase: A case report",
+      "journal": "World Journal of Clinical Cases",
+      "authors": "Meng-Ru Zhan, Xu Liu, Ming-Yuan Zhang, Jun-Qi Niu",
+      "date": "2019 Dec 26",
+      "doi": "10.12998/wjcc.v7.i24.4414",
+      "pmid": "31911926",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6940328/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "CASE PRESENTATION；Further diagnostic work-up；OUTCOME AND FOLLOW-UP"
+    },
+    "timeline": [
+      "一名无明显症状的成人在生育相关健康检查中发现 AST 升高，随后多次复查仍异常，其余肝相关指标持续在参考范围。",
+      "转诊后核对病史与用药，做了实验室及腹部影像评估。停用先前服用的所谓保肝产品后，AST 仍持续孤立升高。"
+    ],
+    "reasoning": [
+      "作者先从常见 AST 来源出发，评估了肝病、骨骼肌疾病、心肌疾病和溶血等可能。报告未提供支持这些解释的证据，其他肝指标和影像没有提供对应线索。",
+      "孤立异常跨多次检测持续存在，且常见来源未获支持，团队开始考虑巨 AST。其思路是酶与大分子形成复合物后可在血中存留，检验值升高不能直接等同于组织损伤。",
+      "实验室对新鲜样本做聚乙二醇沉淀并用其他 AST 升高样本作对照。本例处理后 AST 活性明显下降，支持巨 AST；这是在完整临床评估后的支持性证据。"
+    ],
+    "application": [
+      "把这例的 AST 与 ALT、GGT、肌酶及历年结果放在一起。单一指标持续偏高提供的是待解释的信号，需结合其他证据判断原因。",
+      "理解为什么临床先考虑常见原因、再与检验科探讨巨 AST。该病因来自本病例，不能据此估计在普通体检人群中的概率。"
+    ],
+    "levelReason": "入口是一个持续、孤立的实验室指标，核心决策是何时从找器官疾病转到找检测原因。",
+    "value": "练习把“持续升高”与“某个器官正在受损”分开，识别何时应请检验科协作。",
+    "outcome": "作者认为孤立 AST 升高最可能由巨 AST 所致，未给予针对性治疗。原文报告受检者保持健康，AST 仍孤立升高；未给出明确的远期随访期限。",
+    "profile": "一名成年女性在生育相关检查中发现 AST 偏高，无明显自觉症状。数月内反复异常，其余肝相关指标未同步升高。",
+    "observations": [
+      [
+        "首次发现后约 7 个月",
+        "历次 AST",
+        "76.2–170 U/L；原文参考范围 13–35 U/L。"
+      ],
+      [
+        "转诊评估",
+        "同次肝生化",
+        "AST 89.5、ALT 16.1、ALP 47.6、GGT 12.6 U/L；胆红素在原实验室参考范围。"
+      ],
+      [
+        "转诊评估",
+        "病史与查体",
+        "无明确饮酒史，曾间断使用所谓保肝产品；查体无明显异常。"
+      ],
+      [
+        "进一步检验",
+        "巨酶检测",
+        "报告在聚乙二醇沉淀后测到 AST 活性 1.4 U/L，原文有对照表。"
+      ]
+    ]
+  },
+  {
+    "id": "alp",
+    "level": "初级",
+    "title": "碱性磷酸酶显著升高：区分来源再看趋势",
+    "tags": [
+      "ALP",
+      "碱性磷酸酶",
+      "肝酶",
+      "骨代谢"
+    ],
+    "related": [
+      "masld",
+      "osteoporosis"
+    ],
+    "dailyDay": "",
+    "guidelines": [
+      [
+        "ACG 肝生化异常评估指南",
+        "https://gi.org/guideline/evaluation-of-abnormal-liver-chemistries/"
+      ],
+      [
+        "ACG 肝生化指南官方摘要（PubMed 纯文本）",
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=27995906&rettype=abstract&retmode=text"
+      ]
+    ],
+    "source": {
+      "title": "Benign Transient Hyperphosphatasemia in Adults: Case Report and Literature Review",
+      "journal": "HCA Healthcare Journal of Medicine",
+      "authors": "Jose L Rodriguez Castro, Grettel Gonzalez Garcia, Daniel Heller, Bernardo J Reyes",
+      "date": "2026 Feb 1",
+      "doi": "10.36518/2689-0216.1835",
+      "pmid": "41810259",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12971089/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "Case Presentation；Discussion；Figure 1"
+    },
+    "timeline": [
+      "一名无相应症状的成人常规检查发现 ALP 明显升高，有高血压用药及胆汁淤积性肝病家族史，但常规检查未显示骨或肝病体征。",
+      "一周复测 ALP 进一步升高，GGT、钙磷、甲状旁腺激素及维生素 D 等未给出解释；感染、免疫项目及影像未找到相符病因。",
+      "约四周时 ALP 开始下降，同工酶电泳显示肝与骨两型活性升高，呈作者认为符合良性暂时性高磷酸酶血症的模式。"
+    ],
+    "reasoning": [
+      "团队先确认高值可重复，再根据症状、GGT、骨代谢指标和影像寻找胆汁淤积或骨病线索。家族史值得问，但没有足够证据据此确诊。",
+      "检查未支持上述常见病因，连续下降及同工酶结果改变了判断。作者回顾认为，较早考虑同工酶分析可能减少未能改变决策的检查。"
+    ],
+    "application": [
+      "先对比 ALP 与 GGT、骨代谢及其他结果，再看复查趋势；学习为什么同一个指标可能有不同来源。",
+      "把病例中实际完成的检查与指南的一般评估路径分开读。只有结合风险、有足够随访资料时，才能理解一次明显异常后来为何被判断为暂时性。"
+    ],
+    "levelReason": "虽有多项补查，逻辑集中在一个指标的来源定位和随访趋势。",
+    "value": "练习孤立 ALP 异常时如何把确认结果、定位来源和观察趋势串在一起。",
+    "outcome": "作者最终判断为成人良性暂时性高磷酸酶血症。ALP 在报告随访内恢复正常；文章将这个回落轨迹作为判断依据之一。",
+    "profile": "一名有高血压的成人在常规查体时发现孤立 ALP 显著升高。没有相应自觉症状，查体未见明确肝病或骨病表现；有胆汁淤积性肝病家族史。",
+    "observations": [
+      [
+        "初查",
+        "ALP",
+        "1,496 U/L；原文参考范围 44–147 U/L。"
+      ],
+      [
+        "一周后",
+        "复查与配套指标",
+        "ALP 2,100 U/L；GGT、PTH、钙磷及维生素 D 等在参考范围。"
+      ],
+      [
+        "随后评估",
+        "影像和病因检验",
+        "腹部超声、骨骼检查及腹盆腔 CT 未发现相应异常；所列自身抗体及病毒学检查未提供病因证据。"
+      ],
+      [
+        "约四周",
+        "ALP 与同工酶",
+        "ALP 降至 1,320 U/L；电泳显示肝型与骨型同工酶活性均升高。"
+      ]
+    ]
+  },
+  {
+    "id": "ck-thyroid",
+    "level": "初级",
+    "title": "体检 CK 明显升高：甲功检查怎样改变判断？",
+    "tags": [
+      "CK",
+      "肌酸激酶",
+      "甲减",
+      "甲功"
+    ],
+    "related": [
+      "thyroid-function"
+    ],
+    "dailyDay": "",
+    "guidelines": [
+      [
+        "NICE NG145 甲状腺疾病评估与管理",
+        "https://www.nice.org.uk/guidance/ng145/chapter/recommendations"
+      ]
+    ],
+    "source": {
+      "title": "Health check revealed elevation of creatine kinase related to hypothyroidism",
+      "journal": "Endocrinology, Diabetes & Metabolism Case Reports",
+      "authors": "Xiaoqing Luo, Yamei Quan, Gaodi Luo",
+      "date": "2026-02-13",
+      "doi": "10.1530/EDM-25-0123",
+      "pmid": "41734457",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12921388/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "Investigation；Treatment；Outcome and follow-up"
+    },
+    "timeline": [
+      "成都一所医院的常规体检发现 CK 明显升高，AST 等肌酶相关项目也异常。联系后才问出轻度乏力和间断面部浮肿。",
+      "受检者否认近期剧烈运动、他汀暴露和显著肌痛；查体肌力正常。进一步检测显示 TSH 极高、游离甲状腺激素很低，甲状腺抗体升高。"
+    ],
+    "reasoning": [
+      "作者根据暴露史和体征梳理运动、药物、肌肉及心肌损伤等线索。复查后甲功呈明确原发性甲减模式，比孤立的肌酶描述更能解释现有信息。",
+      "专科进一步检查时肌钙蛋白未升高，未做肌电图或肌肉活检。抗体结果支持可能的自身免疫背景，作者诊断为原发性甲减伴相关肌酶升高。",
+      "治疗后游离激素和 CK 随访同向改善。这个时间关系支持病因关联，但病例报告本身无法排除所有其他机制。"
+    ],
+    "application": [
+      "观察 CK、症状及甲功随治疗的时间关系，学习怎样把一个化验异常和可能病因联系起来。",
+      "本例提示原因不明的 CK 升高可考虑甲状腺因素；无法从单例判断普遍检测 CK 是否能改善健康结局。"
+    ],
+    "levelReason": "从单一重点异常进入，甲功结果和治疗后的趋势把证据连成一条主线。",
+    "value": "学习遇到肌酶升高时怎样追问运动和药物，并避免遗漏甲状腺功能减退。",
+    "outcome": "专科给予左甲状腺素。早期复查 CK 已明显下降，之后甲功恢复至参考范围，后续体检 CK 也恢复正常。",
+    "profile": "一名成年女性参加常规体检时发现 CK 显著升高。回访时提到轻度乏力和间歇性面部浮肿，否认近期剧烈运动和他汀用药，查体四肢肌力正常。",
+    "observations": [
+      [
+        "体检",
+        "肌酶与转氨酶",
+        "CK 1,697.5 U/L（参考范围 40–200）；LDH 329.4 U/L、AST 57.3 U/L。"
+      ],
+      [
+        "召回",
+        "甲状腺功能",
+        "TSH >100 mIU/L、FT4 <0.50 pmol/L、FT3 <0.60 pmol/L。"
+      ],
+      [
+        "召回",
+        "抗体与超声",
+        "TgAb >4,000 IU/mL、TPOAb 413 IU/mL；腺体偏小且回声不均，伴双侧低回声结节。"
+      ],
+      [
+        "专科评估",
+        "肌力和心脏检查",
+        "肌力 5/5；高敏肌钙蛋白 I 在参考范围，心超左室收缩功能正常。"
+      ]
+    ]
+  },
+  {
+    "id": "urine-nutcracker",
+    "level": "中级",
+    "title": "尿潜血合并尿白蛋白异常：超声怎样改变路径？",
+    "tags": [
+      "尿潜血",
+      "尿蛋白",
+      "血尿",
+      "尿白蛋白",
+      "胡桃夹"
+    ],
+    "related": [
+      "urine-blood",
+      "ckd"
+    ],
+    "dailyDay": "",
+    "guidelines": [
+      [
+        "AUA/SUFU 2025 镜下血尿指南",
+        "https://www.auanet.org/guidelines-and-quality/guidelines/microhematuria"
+      ]
+    ],
+    "source": {
+      "title": "Doppler ultrasound diagnosis of anterior nutcracker syndrome presenting with isolated urinary abnormalities",
+      "journal": "Radiology Case Reports",
+      "authors": "Michele Marchini, Matteo Trezzi",
+      "date": "2026-07-14",
+      "doi": "10.1016/j.radcr.2026.06.118",
+      "pmid": "42518703",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13382299/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "Case report；Discussion；Conclusions"
+    },
+    "timeline": [
+      "年轻成人在运动资格检查中发现间歇性镜下血尿和白蛋白尿，血压、肾功能正常，未报告肉眼血尿或相关疼痛。",
+      "实验室检查未发现支持免疫性病因的异常。肾脏形态正常，但超声看到左肾静脉近端扩张、主动脉与肠系膜上动脉间局部变窄。"
+    ],
+    "reasoning": [
+      "作者先结合病史、蛋白尿和肾功能评估是否存在实质性肾病线索。常规检查没有给出充分解释后，多普勒用来验证静脉压迫是否伴有显著血流变化。",
+      "狭窄段血流速度明显升高，结合近端扩张和尿检异常，支持前型胡桃夹综合征。文章区分有影像压迫的现象和有临床表现的综合征，不能靠一个形态所见决定归因。",
+      "作者考虑症状轻、肾功能稳定，选择保守观察，而非立即进入侵入性处置。"
+    ],
+    "application": [
+      "把尿试纸、镜下红细胞和尿白蛋白定量分开理解，关注哪些异常持续存在、哪些伴随信号会改变评估方向。",
+      "理解超声形态和血流证据如何结合。长期管理看异常是否持续、是否伴蛋白尿或肾功能变化；病例中的血管发现并不能解释所有人的血尿。"
+    ],
+    "levelReason": "存在两类尿检异常，需比较肾实质与血管来源，并把影像与临床放在一起解释。",
+    "value": "练习镜下血尿合并白蛋白尿时如何组织肾功能、免疫检查与影像线索。",
+    "outcome": "作者诊断前型胡桃夹综合征，建议定期血尿检查并观察。原文描述了计划，未报告后续复查结果。",
+    "profile": "一名年轻成人在运动资格检查的尿检中发现间歇性镜下血尿和白蛋白尿。没有报告肉眼血尿或相关疼痛，血压、肾功能与肾脏形态正常。",
+    "observations": [
+      [
+        "资格检查",
+        "尿检",
+        "尿红细胞 150 个/µL，尿白蛋白/肌酐比 95 mg/g；原文用的是每微升单位。"
+      ],
+      [
+        "进一步评估",
+        "肾功能和免疫",
+        "肌酐、胱抑素 C、补体在参考范围，原文所列自身抗体检查阴性。"
+      ],
+      [
+        "超声",
+        "左肾静脉形态",
+        "近端直径 0.87 cm，跨过主动脉与肠系膜上动脉处狭窄段直径 0.11 cm。"
+      ],
+      [
+        "多普勒",
+        "狭窄段血流",
+        "峰值 178 cm/s；原文给出的估算跨狭窄压差为 12.8 mmHg。"
+      ]
+    ]
+  },
+  {
+    "id": "stool-screen",
+    "level": "中级",
+    "title": "大便隐血阳性：可疑狭窄为什么还要重查？",
+    "tags": [
+      "大便隐血",
+      "粪便隐血",
+      "便潜血",
+      "肠镜",
+      "结肠"
+    ],
+    "related": [
+      "stool-blood"
+    ],
+    "dailyDay": "",
+    "guidelines": [
+      [
+        "国家卫健委结直肠癌筛查与早诊早治方案",
+        "https://www.nhc.gov.cn/ylyjs/gzdt/202408/42f43b5f0c4c4ebe90c78ee127959b92.shtml"
+      ]
+    ],
+    "source": {
+      "title": "An interesting cause of faecal occult blood",
+      "journal": "BMJ Case Reports",
+      "authors": "Nicolas Rabb, Panagiota Kitsanta, Lesley Hunt, Stuart Riley",
+      "date": "2012 Aug 18",
+      "doi": "10.1136/bcr-03-2012-6007",
+      "pmid": "22907849",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4543110/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "Investigations；Treatment；Outcome and follow-up"
+    },
+    "timeline": [
+      "一名没有当前不适的成人从结直肠癌筛查阳性进入诊断路径。初次肠镜遇到乙状结肠狭窄，造影提示可能有肿瘤样病变。",
+      "复做肠镜发现一条坚硬物横跨肠腔、两端嵌入肠壁，无法直接取出。回问病史后得知此前曾因局部腹痛按憩室炎处理。"
+    ],
+    "reasoning": [
+      "最初需考虑肿瘤。复查肠镜的新形态与既往炎症史改变了假设，团队复核 CT，发现可能为骨性异物并伴局部炎症和包裹性穿孔。",
+      "团队比较保留、内镜取出和手术。作者记录内镜处理可能扩大穿孔，结合异物嵌顿和既往炎症，团队讨论后选择手术。"
+    ],
+    "application": [
+      "筛查结果回答的是是否需要进一步评估。阅读时可沿结果阳性、结肠镜评估、检查是否完整到最终诊断逐步对照。",
+      "这个出血原因很少见。可迁移的收获是理解为什么应完成恰当的诊断评估，以及何时依据正式结论进入下一次筛查或随访。"
+    ],
+    "levelReason": "筛查异常、首次不完整检查和影像疑癌之间不一致，需要重新组合证据并权衡方案。",
+    "value": "学习阳性筛查后如何跟踪不完整的肠镜，避免因为暂时无症状或既往其他解释而结案。",
+    "outcome": "腹腔镜切除后的病理证实骨性异物嵌入憩室并有包裹性穿孔。患者恢复，原文未报告更长期随访。",
+    "profile": "一名老年男性在肠癌筛查中大便隐血阳性，当时没有明显不适。有慢性阻塞性肺疾病和缺血性心脏病，进一步追问才得知此前因左下腹痛按憩室炎治疗过。",
+    "observations": [
+      [
+        "首次诊断检查",
+        "肠镜与造影",
+        "初次肠镜受乙状结肠狭窄限制；同日钡剂造影见不规则狭窄和息肉样影。"
+      ],
+      [
+        "复查肠镜",
+        "狭窄部位所见",
+        "硬质条状物横跨乙状结肠，两端嵌入肠壁，未能在镜下取出或活检。"
+      ],
+      [
+        "随后 CT",
+        "乙状结肠",
+        "见横跨肠腔的钙化骨样异物，两端超出肠壁，邻近有炎症和包裹性穿孔表现。"
+      ],
+      [
+        "手术取材",
+        "病理",
+        "约 40 mm 骨性异物嵌入憩室，伴包裹性穿孔和局部腹膜炎。"
+      ]
+    ]
+  },
+  {
+    "id": "lung-enhancement",
+    "level": "中级",
+    "title": "肺结节既有钙化又显著强化：如何处理矛盾线索？",
+    "tags": [
+      "肺结节",
+      "强化",
+      "钙化",
+      "错构瘤",
+      "病理"
+    ],
+    "related": [],
+    "dailyDay": "2026-11-13",
+    "guidelines": [
+      [
+        "Fleischner 学会成人偶发肺结节指南",
+        "https://pubs.rsna.org/doi/10.1148/radiol.2017161659"
+      ],
+      [
+        "Fleischner 肺结节指南官方摘要（PubMed 纯文本）",
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=28240562&rettype=abstract&retmode=text"
+      ]
+    ],
+    "source": {
+      "title": "Sclerosing pneumocytoma mixed with a typical carcinoid: a case report and review of literature",
+      "journal": "International Journal of Surgery Case Reports",
+      "authors": "Kyung Bin Kim, Ahrong Kim, Dong Hoon Shin, Minhee Hwang, Jeong Su Cho, Kyung Un Choi",
+      "date": "2026-04-03",
+      "doi": "10.1097/RC9.0000000000000444",
+      "pmid": "42130573",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13166861/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "Case presentation；Discussion"
+    },
+    "timeline": [
+      "一名无症状成人体检发现右上肺单发实性结节。增强 CT 有钙化和疑似脂肪，但强化明显；检查未见明确纵隔淋巴结异常。",
+      "术中先楔形切除。冰冻切片见梭形或卵圆形细胞增殖，无法确定性质，等待常规石蜡和免疫组化。"
+    ],
+    "reasoning": [
+      "钙化和脂肪使错构瘤等良性解释成为可能，作者又根据强化保留恶性可能。影像线索能支持假设，但单条线索不足以决定性质。",
+      "冰冻切片未定性时没有仅凭当时结果完成大范围手术。石蜡切片和免疫组化区分出硬化性肺细胞瘤与典型类癌两种成分。",
+      "病例描述此后完成肺叶切除及淋巴结清扫。这个后续决策依赖确切组织学结果，不能反推所有同类体检影像均应手术。"
+    ],
+    "application": [
+      "找出哪些影像线索使判断偏向良性、哪些让作者保留不确定性，再看最终病理为什么改变判断。",
+      "普通肺结节的管理要结合适用指南、人群风险和旧片变化。这个少见病理结局不能用来推断同类结节的概率或一律采用相同干预。"
+    ],
+    "levelReason": "初始影像同时出现相反线索，诊断由影像转向分阶段病理，最终处置也随病理改变。",
+    "value": "练习遇到貌似良性但无法解释的肺结节时，怎样在报告中保留不确定性。",
+    "outcome": "最终为硬化性肺细胞瘤伴典型类癌，追加手术未见残留或淋巴结转移。原文病例段报告术后约一年未见复发或转移；讨论段给出的观察时长略有不同。",
+    "profile": "一名无明显症状的成人体检发现右上肺单发结节，无明显既往病史或相关家族史。增强影像同时有偏良性和需要进一步判断的特征。",
+    "observations": [
+      [
+        "体检后 CT",
+        "结节位置与大小",
+        "右上叶单发实性结节，约 22 mm，边界清楚。"
+      ],
+      [
+        "增强 CT",
+        "结节内部与周围",
+        "见钙化和疑似脂肪，也见明显强化；未见纵隔淋巴结肿大。"
+      ],
+      [
+        "术中",
+        "冰冻切片",
+        "见梭形至卵圆形细胞增殖，性质待常规石蜡切片确定。"
+      ],
+      [
+        "病理复核",
+        "免疫组化",
+        "不同区域分别有 TTF-1 表达和突触素等神经内分泌标志物表达。"
+      ]
+    ]
+  },
+  {
+    "id": "adrenal-dual",
+    "level": "高级",
+    "title": "高血压遇到肾上腺结节：为什么查了两条激素轴？",
+    "tags": [
+      "肾上腺结节",
+      "继发性高血压",
+      "原醛",
+      "嗜铬细胞瘤"
+    ],
+    "related": [
+      "hypertension"
+    ],
+    "dailyDay": "",
+    "guidelines": [
+      [
+        "ESE 2023 肾上腺偶发瘤指南",
+        "https://www.ese-hormones.org/publications/directory/ese-clinical-practice-guideline-on-the-management-of-adrenal-incidentalomas-in-collaboration-with-the-european-network-for-the-study-of-adrenal-tumors/"
+      ]
+    ],
+    "source": {
+      "title": "Coexistence of Pheochromocytoma and Primary Aldosteronism due to Multiple Aldosterone-producing Micronodules in the Ipsilateral Adrenal Gland",
+      "journal": "Internal Medicine",
+      "authors": "Satoshi Ugi, Maya Yonishi, Daisuke Sato, Nobuhiko Nakaizumi, Osamu Horikawa, Yukihiro Fujita, Kentaro Inoue, Akinori Wada, Susumu Kageyama, Akihiro Kawauchi, Michiko Hino, Mai Noujima, Yuto Yamazaki, Hironobu Sasano, Hiroshi Maegawa",
+      "date": "2023-02-01",
+      "doi": "10.2169/internalmedicine.1012-22",
+      "pmid": "36725043",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10569916/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "Case Report；Discussion；Table 2"
+    },
+    "timeline": [
+      "体检数年前发现高血压，之后又偶见右侧肾上腺结节。没有低钾，也没有典型儿茶酚胺过多症状。",
+      "醛固酮与肾素的组合触发确认检查，支持原发性醛固酮增多症。MRI 另外提示嗜铬细胞瘤可能，尿代谢物及功能显像进一步支持这一方向。"
+    ],
+    "reasoning": [
+      "作者分别验证两条激素轴。正常血钾没有使他们停止原醛评估，缺少典型症状也没有消除影像支持的第二种可能。",
+      "临床团队先处理右侧嗜铬细胞瘤。病例没有做肾上腺静脉采血，作者明确承认因此无法有把握地确定原醛侧别。",
+      "切除组织除嗜铬细胞瘤外，还发现多个产生醛固酮的皮质微结节。术后儿茶酚胺相关尿指标回落，原醛的部分生化证据持续，血压也再升高，提示不能用一次术后改善判定两种病均治愈。"
+    ],
+    "application": [
+      "学习同一个影像发现为什么可能对应不同的激素分泌问题。对照正常血钾、激素结果和影像各自能提供的证据。",
+      "在随访中把血压、肾上腺病变及两条激素轴的结局分别理解。部分指标改善说明对应问题改善，未必能代表其他风险也已解决。"
+    ],
+    "levelReason": "同一侧肾上腺有两种内分泌异常线索，处置顺序与术后结果都需分别分析。",
+    "value": "学习体检血压和偶发肿块如何交接，避免仅凭影像位置推断激素来源。",
+    "outcome": "右侧病变切除后，嗜铬细胞瘤相关生化异常改善。原醛未获临床治愈，作者报告后续使用螺内酯控制血压；另一侧来源仍属于推断。",
+    "profile": "一名成年女性曾在年度体检发现血压高，后续影像偶见右肾上腺肿物。就诊时正在用降压药，没有低钾，也未报告典型阵发性心悸、头痛或出汗。",
+    "observations": [
+      [
+        "转诊时",
+        "血压与影像",
+        "用氨氯地平期间血压 157/105 mmHg；右肾上腺影像病灶约 20 mm。"
+      ],
+      [
+        "激素评估",
+        "醛固酮与肾素",
+        "血浆醛固酮 139 pg/mL、肾素活性 0.5 ng/mL/h；原文按本例单位计算比值 278。"
+      ],
+      [
+        "进一步检查",
+        "MRI 与尿代谢物",
+        "右侧病灶 T1 低信号、T2 高信号；24 小时尿甲氧基肾上腺素 0.76 mg/d，超过原文参考范围。"
+      ],
+      [
+        "术后复核",
+        "病理与随访化验",
+        "髓质肿物及皮质微结节具有不同免疫表型；儿茶酚胺相关尿指标改善，原醛部分指标仍异常。"
+      ]
+    ]
+  },
+  {
+    "id": "lung-mdt",
+    "level": "高级",
+    "title": "双肺多发结节：旧妇科病史怎样进入多学科判断？",
+    "tags": [
+      "肺结节",
+      "多发结节",
+      "多学科",
+      "子宫肌瘤"
+    ],
+    "related": [],
+    "dailyDay": "2026-11-13",
+    "guidelines": [
+      [
+        "Fleischner 学会成人偶发肺结节指南",
+        "https://pubs.rsna.org/doi/10.1148/radiol.2017161659"
+      ],
+      [
+        "Fleischner 肺结节指南官方摘要（PubMed 纯文本）",
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=28240562&rettype=abstract&retmode=text"
+      ]
+    ],
+    "source": {
+      "title": "Pulmonary benign metastasizing leiomyoma: A case report and review of the literature",
+      "journal": "World Journal of Clinical Cases",
+      "authors": "Hai-Yun Dai, Shu-Liang Guo, Jian Shen, Li Yang",
+      "date": "2020-07-26",
+      "doi": "10.12998/wjcc.v8.i14.3082",
+      "pmid": "32775390",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7385613/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "CASE PRESENTATION；FINAL DIAGNOSIS；OUTCOME AND FOLLOW-UP"
+    },
+    "timeline": [
+      "一名无症状成人体检发现双肺多发小结节。其既往有子宫肌瘤及子宫切除史，初步影像考虑肺癌或转移性病变。",
+      "经皮取材发生气胸，经处理恢复。取材未检出癌细胞或结核相关证据，组织显示梭形细胞；免疫组化提示平滑肌来源，但仍需鉴别。"
+    ],
+    "reasoning": [
+      "作者综合结节分布、组织学和免疫标记，而没有仅因肺结节多发就认定转移癌。PET 未见明显摄取是补充信息，不能单独作良恶性结论。",
+      "呼吸、肿瘤、妇科、影像、病理及核医学团队把既往妇科病史与平滑肌标记结果联系起来，最终支持肺良性转移性平滑肌瘤。",
+      "考虑小病灶、无症状，团队选择监测。文章记录了穿刺并发症，不能把本例取材直接搬成所有多发小结节流程。"
+    ],
+    "application": [
+      "复盘旧手术史、影像、病理标记和多学科意见分别贡献了什么，尤其注意单项阴性结果的限度。",
+      "比较一个诊断可能带来的益处与取材风险，理解为什么作者记录并发症。偶发肺结节的普遍管理仍从适用指南和个人风险出发。"
+    ],
+    "levelReason": "需要整合肺部影像、妇科既往史、组织学与多学科讨论，并承认检查代价。",
+    "value": "练习在发现跨系统线索时补回关键病史，理解取材可回答的问题以及它的风险。",
+    "outcome": "原作者诊断为来自子宫平滑肌瘤的肺良性转移性平滑肌瘤。观察六个月的胸部高分辨率 CT 未见进展。",
+    "profile": "一名成年女性体检发现双肺多发小结节，无症状、不吸烟。多年前曾因子宫肌瘤行子宫切除，这段病史后来进入多学科讨论。",
+    "observations": [
+      [
+        "体检后 HRCT",
+        "肺结节",
+        "双肺多发，最大一个在右下叶，约 7 mm。"
+      ],
+      [
+        "组织取样",
+        "经皮肺穿刺",
+        "取材见少量梭形细胞；过程中发生气胸，经胸腔穿刺抽气后恢复。"
+      ],
+      [
+        "病理与功能影像",
+        "免疫组化及 PET/CT",
+        "SMA、Desmin 阳性；原文报告肺结节未见明显 FDG 摄取。"
+      ],
+      [
+        "观察期",
+        "旧片对比",
+        "六个月时胸部 HRCT 未见进展。"
+      ]
+    ]
+  },
+  {
+    "id": "pancreas-vascular",
+    "level": "高级",
+    "title": "腹部超声发现胰头异常：为何最终沿血管病变处理？",
+    "tags": [
+      "腹部超声",
+      "胰头",
+      "血管异常",
+      "肾功能",
+      "影像"
+    ],
+    "related": [
+      "ckd"
+    ],
+    "dailyDay": "",
+    "guidelines": [
+      [
+        "KDIGO 2024 慢性肾脏病指南执行摘要（本例合并症）",
+        "https://doi.org/10.1016/j.kint.2023.10.016"
+      ]
+    ],
+    "source": {
+      "title": "Pancreatic arteriovenous malformation treated with transcatheter arterial embolization: Two case reports and review of literature",
+      "journal": "World Journal of Clinical Cases",
+      "authors": "Sang Hoon Shin, Chol Kyoon Cho, Sung Yeol Yu",
+      "date": "2023-10-06",
+      "doi": "10.12998/wjcc.v11.i28.6920",
+      "pmid": "37901023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10600833/",
+      "access": "PMC 全文可读，2026-11-18 核对",
+      "sections": "CASE PRESENTATION（病例1）；TREATMENT；OUTCOME AND FOLLOW-UP"
+    },
+    "timeline": [
+      "本文的病例 1 在无相关症状的常规体检中有胰腺超声异常。辅助化验起初没有给出病因，既往有高血压和晚期慢性肾病。",
+      "后续增强 CT 与 MRI 见胰头富血供病变，并在动脉期见门静脉提前显影。团队据此考虑胰腺动静脉畸形。"
+    ],
+    "reasoning": [
+      "原作者将病灶强化和早期静脉回流合在一起解释。后者支持异常动静脉分流，使血管性病变成为优先假设。",
+      "考虑受检者无症状且手术风险较高，团队选择经导管动脉栓塞。血管造影显示多支供血分支，为定位和处置提供依据。",
+      "处置后出现发热及上腹痛。团队继续评估，胃镜发现缺血性十二指肠炎，保守治疗后改善。原作者以长期影像和症状共同评估效果。"
+    ],
+    "application": [
+      "比较超声、增强影像和血管造影回答的问题，理解合并肾功能异常时为什么需要同时考虑检查风险。",
+      "随访要区分病变变化、治疗可能带来的问题和合并慢病。KDIGO 来源用于理解本例的肾病背景，胰腺血管病变的处置由专科评估。"
+    ],
+    "levelReason": "从腹部偶发发现进入多模式影像，兼顾肾衰与手术风险，并处理术后并发症和长期追踪。",
+    "value": "练习遇到富血供胰腺病灶时如何写清影像疑问和重要合并症，并回收介入及随访结论。",
+    "outcome": "作者诊断胰腺动静脉畸形。栓塞后并发症改善，九年随访中病变缩小、富血供减轻，报告称患者无症状。",
+    "profile": "两例报告中的病例 1 在常规体检腹部超声发现胰腺异常，没有相关症状。既往有高血压及晚期慢性肾脏病，是决定检查和介入方案的重要背景。",
+    "observations": [
+      [
+        "体检及转诊",
+        "超声与肾功能",
+        "胰腺超声异常；原文 eGFR 11.79 mL/min/1.73 m²。"
+      ],
+      [
+        "增强影像",
+        "胰头 CT/MRI",
+        "约 4 cm 富血供病灶，动脉期门静脉提前显影。"
+      ],
+      [
+        "介入时",
+        "血管造影",
+        "见胰头高血供染色及多支供血血管。"
+      ],
+      [
+        "介入后不适",
+        "胃镜",
+        "发热和上腹痛后行胃镜，见缺血性十二指肠炎和萎缩性胃炎。"
+      ]
+    ]
+  },
+  {
+    "id": "glucose-bp-lipids",
+    "level": "中级",
+    "title": "体检血糖、血压同时升高：如何理解风险与长期管理？",
+    "tags": [
+      "空腹血糖",
+      "糖化血红蛋白",
+      "糖尿病",
+      "高血压",
+      "血脂",
+      "体重管理",
+      "循证自学"
+    ],
+    "related": [
+      "diabetes",
+      "hypertension",
+      "lipids",
+      "obesity"
+    ],
+    "dailyDay": "",
+    "levelReason": "中级，适合初学者进阶。这个案例从常见异常出发，学习区分诊断证据、当下风险与长期管理。",
+    "value": "弄懂一次血糖或血压读数能说明什么、还需要什么证据，以及生活方式、临床管理和随访各能解决什么问题。",
+    "profile": "一名成年女性参加健康检查，既往已因高血压接受治疗，无明显口渴、多尿或多饮，有糖尿病家族史。体检发现空腹血糖和糖化血红蛋白升高、血压仍高，并有明显肥胖。病例 1 是实际发表的临床观察。",
+    "observations": [
+      [
+        "体检当日",
+        "空腹血糖与糖化血红蛋白",
+        "空腹血浆葡萄糖 128 mg/dL（约 7.1 mmol/L），HbA1c 6.6%。尿糖、尿蛋白和尿酮体阴性。"
+      ],
+      [
+        "体检当日",
+        "血压及体格",
+        "诊室血压 170/100 mmHg，BMI 40.9 kg/m²；既往有高血压治疗史。"
+      ],
+      [
+        "约一周后",
+        "75 g OGTT",
+        "原文表 1 的首次记录：空腹 135 mg/dL（约 7.5 mmol/L），2 小时 235 mg/dL（约 13.0 mmol/L）。这与首次体检抽血分别记录。"
+      ],
+      [
+        "随后管理中",
+        "血脂",
+        "LDL-C 256 mg/dL（约 6.62 mmol/L）。该数值来自后续记录，不是体检当天的结果。"
+      ]
+    ],
+    "timeline": [
+      "体检发现两项血糖指标异常，血压仍高。",
+      "约一周后做 75 g 口服葡萄糖耐量试验，原文结果为糖尿病型。",
+      "临床分别管理血糖、血压和之后发现的血脂异常，长期记录血糖、体重和相关风险指标。"
+    ],
+    "reasoning": [
+      "初始线索来自血液检查。原文记载受检者没有典型高血糖症状，尿糖结果阴性；作者没有用尿试纸替代对血浆血糖异常的评估。",
+      "作者记载约一周后开展 75 g OGTT，以进一步刻画糖代谢并帮助选择治疗。初次 OGTT 中空腹及两小时结果都异常，支持诊断。原文未逐条交代为何选择 OGTT 而非重复空腹血糖。",
+      "既有高血压治疗史且本次血压仍明显升高。原文后续记录了降压管理及血脂治疗，说明管理问题随新数据出现需要持续调整。原文关注长期代谢变化，未记录体检当天是否规范复测血压或进行急症分流。"
+    ],
+    "outcome": "原文将其作为 2 型糖尿病病例，记录了降糖、降压及随后降脂治疗。2006 年血压记录为 120–130/70–80 mmHg，降脂后 LDL-C 有下降，报告后续还记录了体重、HbA1c 和 OGTT 的长期变化。单例不能分离药物、体重变化及其他因素的各自作用。",
+    "application": [
+      "先理解风险和紧迫性。明显升高的血压要规范复测，并结合胸痛、呼吸困难或新发神经症状等情况判断紧迫性。本例没有记载当天是否复测，不能倒推当时风险已被排除。",
+      "再理解确认诊断。初次空腹血糖、HbA1c 与随后的 OGTT 分别提供证据；尿糖阴性不能否定血液结果。阅读中国糖尿病指南时，重点区分有典型症状、无典型症状及检测结果可能受干扰的情形。",
+      "把长期管理作为下一步学习重点。血糖、血压、血脂、体重和活动可共同影响总体心血管风险。与临床团队讨论适合个人的目标和可持续的饮食、活动安排，并用同条件的复测和长期趋势评估进展。",
+      "区分证据的用途。病例展示先后顺序和某一人的经历；指南用于理解哪些人群有证据支持某种做法。长期指标改善时，不能从个案分离药物、饮食、体重变化各自的贡献。"
+    ],
+    "guidelines": [
+      [
+        "中国糖尿病防治指南（2024版）· 诊断与筛查",
+        "https://www.sinomed.ac.cn/article.do?ui=2025169706"
+      ],
+      [
+        "中国高血压防治指南（2024年修订版）· 血压测量与诊断",
+        "https://cjournal.hep.com.cn/1673-7245/CN/1160171857581368285"
+      ],
+      [
+        "中国血脂管理指南（2023）· ASCVD风险分层",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10568545/"
+      ]
+    ],
+    "source": {
+      "title": "Preserving insulin function in diabetes: a case report",
+      "authors": "Masaru Oota",
+      "journal": "Journal of Medical Case Reports",
+      "date": "2024-09-07",
+      "doi": "10.1186/s13256-024-04714-w",
+      "pmid": "39242549",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11380200/",
+      "access": "核对了 Europe PMC 全文（2026-11-18）",
+      "sections": "Case presentation 的 Case 1、Table 1、Figure 1"
+    },
+    "studyQuestions": [
+      [
+        "尿糖阴性，为什么仍需要重视空腹血糖和 HbA1c？",
+        "这些检查回答的问题不同。尿试纸结果不能替代标准血糖检测，确认诊断时还要考虑症状、采样条件和检测方法。"
+      ],
+      [
+        "后续发现 LDL-C 偏高，为什么不能把它当作首次体检结果？",
+        "两次测量时间不同。把资料按时间排开，才能知道当时能作哪些判断，以及新证据怎样改变长期风险评估。"
+      ],
+      [
+        "长期血压和代谢指标改善，能证明其中哪一种措施单独起效吗？",
+        "不能从这份个案分离原因。先理解病例所见，再看相关指南背后的人群研究、适用范围和获益证据。"
+      ]
+    ]
+  }
+]

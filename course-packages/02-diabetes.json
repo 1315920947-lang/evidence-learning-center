@@ -1,0 +1,110 @@
+{
+  "day": "2026-11-18",
+  "title": "糖尿病前期与2型糖尿病｜体检学习工作包",
+  "topic": "糖尿病前期与2型糖尿病",
+  "system": "内分泌与代谢",
+  "minutes": 75,
+  "content": "## 体检发现\n空腹血糖或 HbA1c 首次升高、两项不一致，或治疗中的血糖、血压、血脂有持续异常。\n\n## 最值得干预的地方\n对超重且高进展风险者，结构化体重管理和规律运动可降低2型糖尿病进展风险。确诊后的获益来自血糖、血压、血脂、肾脏和其他并发症的综合管理。\n\n## 75 分钟学习安排\n\n| 环节 | 时间 | 完成标准 |\n|---|---:|---|\n| 检前沟通 | 8 分钟 | 理解哪些病史会改变对体检发现的判断 |\n| 项目设计 | 12 分钟 | 比较常规检查、选择性加项和已有疾病监测的不同用途 |\n| 检后解读 | 12 分钟 | 区分结果能提示什么、还需要哪些证据 |\n| 复查随访 | 8 分钟 | 理解复查指标、时间及什么变化会改变判断 |\n| 指南精读与对照 | 20 分钟 | 记录两份指南适用范围、一个差异和一个适用范围或例外 |\n| 三道案例与复盘 | 15 分钟 | 各题先作答，记录误判原因并对照原文 |\n\n本页用于个人循证学习。重点是看懂体检发现、核对指南证据，并理解可持续的健康管理。\n",
+  "source": "研修中心编写 · 指南检索 2026-11-18",
+  "references": [
+    {
+      "title": "中国糖尿病防治指南（2024版）",
+      "source": "中华医学会糖尿病学分会 · 2025（2024版）",
+      "url": "https://www.sinomed.ac.cn/article.do?ui=2025169706",
+      "full_text_url": "https://diab.cma.org.cn/cn/ncontent.aspx?oid=3042",
+      "doi": "",
+      "pmid": "",
+      "access": "中华医学会糖尿病学分会官方指南入口，同一指南（exact match）"
+    },
+    {
+      "title": "Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026",
+      "source": "ADA·Diabetes Care · 2026卷",
+      "url": "https://doi.org/10.2337/dc26-S002",
+      "full_text_url": "",
+      "doi": "10.2337/dc26-S002",
+      "pmid": "",
+      "access": "已定位出处，全文入口待核验"
+    },
+    {
+      "title": "Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes—2026",
+      "source": "ADA·Diabetes Care · 2026卷",
+      "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S50/163924/3-Prevention-or-Delay-of-Diabetes-and-Associated",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690170/",
+      "doi": "10.2337/dc26-S003",
+      "pmid": "",
+      "access": "PMC 正式出版版本，CC BY-NC-ND 4.0；仅限署名、非商业、不得改编"
+    },
+    {
+      "title": "Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026",
+      "source": "ADA·Diabetes Care · 2026卷",
+      "url": "https://doi.org/10.2337/dc26-S006",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12690178/",
+      "doi": "10.2337/dc26-S006",
+      "pmid": "",
+      "access": "PMC 正式机构存档；ADA 保留版权，未确认可再发布许可"
+    }
+  ],
+  "questions": [
+    {
+      "question": "无典型症状、静脉空腹血糖一次达到糖尿病参考诊断范围，应怎么做？",
+      "options": [
+        "核对条件并安排确认",
+        "当场宣布已确诊并给药",
+        "只做指尖血糖代替"
+      ],
+      "answer": 0,
+      "explanation": "无症状时应确认异常；首次结果不足以在体检环节自行治疗，指尖读数并不能替代标准诊断。\n依据：中国糖尿病防治指南（2024版）; Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026; Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes—2026; Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026。请对照本页指南原文。"
+    },
+    {
+      "question": "糖化偏高但有近期输血，下一步？",
+      "options": [
+        "直接以 HbA1c 诊断",
+        "考虑红细胞周转影响，依血浆葡萄糖路径确认",
+        "忽略全部血糖结果"
+      ],
+      "answer": 1,
+      "explanation": "输血会影响糖化解释；可用标准血浆葡萄糖确认，不宜凭受影响指标下结论或放弃评估。\n依据：中国糖尿病防治指南（2024版）; Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026; Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes—2026; Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026。请对照本页指南原文。"
+    },
+    {
+      "question": "已确诊且治疗中自述反复低血糖，同时报告血脂异常，如何管理？",
+      "options": [
+        "只追求更低 HbA1c",
+        "等下一年再沟通",
+        "优先评估低血糖并联动总体风险"
+      ],
+      "answer": 2,
+      "explanation": "低血糖需要用药与安全评估；同时开展综合血管风险管理，不能用单个 HbA1c 目标覆盖。\n依据：中国糖尿病防治指南（2024版）; Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026; Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes—2026; Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026。请对照本页指南原文。"
+    }
+  ],
+  "tools": [
+    {
+      "kind": "体检审核清单",
+      "title": "糖尿病前期与2型糖尿病｜检前信息与结果核对清单",
+      "content": "## 重点问询\n\n确认是否真正空腹、近期感染或应激、妊娠史和糖皮质激素用药；询问多饮、多尿、体重下降及既往妊娠糖尿病、家族史。贫血、近期失血输血、血红蛋白变异和部分肾病可能影响 HbA1c 解释。\n\n- [ ] 核对原报告、单位、历年趋势及测量或采样条件。\n- [ ] 复述关键病史、用药和是否有急性警示。\n- [ ] 区分本次发现、待确认诊断和已确诊管理状态。\n- [ ] 与受检者核对下一步、联系渠道及责任人。\n\n“这两项代表不同时间尺度的血糖状况。先查清采样和影响因素，再决定复验哪项。若确认处在进展风险较高阶段，可以尽早干预。”"
+    },
+    {
+      "kind": "报告解读模板",
+      "title": "糖尿病前期与2型糖尿病｜检查项目与结果解读参考",
+      "content": "| 人群 | 项目与决策 |\n|---|---|\n| 团检基础与常规成人 | 按院内成人风险和筛查规范选择标准静脉血糖；确认禁食、检验质量及异常反馈责任。低风险者不因一次边界读数自动追加胰岛素全套。 |\n| 高风险与选择性评估 | 结果边界或不一致时核对影响因素，临床医生可选择复验超过诊断阈值的指标或安排标准口服葡萄糖耐量试验。HbA1c 需采用合格方法；影响红细胞周转时优先用血浆葡萄糖证据。 |\n| 已确诊或在治疗 | 已确诊者按医生目标跟踪 HbA1c，并核对低血糖、血压血脂、eGFR/UACR、眼底和足部管理是否已纳入专科计划。单次筛查糖化不能替代长期随访。 |\n\n## 读结果时问自己\n\n这个发现能说明什么？历年变化、症状和用药是否会影响判断？下一次检查需要回答什么问题？\n\n## 异常分流\n\n无典型症状时孤立的糖尿病范围异常通常须确认；有典型高血糖症状时走临床诊断流程。美国 ADA 和国内指南的空腹血糖受损口径可能不同，工作包不用同一个阈值跨体系贴标签。HbA1c 的诊断界值与确诊后的个体目标应分开解释。明显消瘦伴呕吐、脱水或呼吸异常，须及时临床评估。"
+    },
+    {
+      "kind": "随访工具",
+      "title": "糖尿病前期与2型糖尿病｜复查随访与闭环记录",
+      "content": "| 状态 | 复查项目、复诊或转介时点 |\n|---|---|\n| 首次异常 | 及时确认诊断范围异常，出现疑急症即转急诊 |\n| 高风险未确诊 | 糖尿病前期可参照 ADA 至少每年监测，风险高者缩短 |\n| 已确诊未控制或出现变化 | 治疗近期调整或未达标常约每3个月评估HbA1c，低血糖可更早 |\n| 已确诊且稳定 | ADA 建议稳定达标成人至少每年两次评估血糖状态，实际按专科计划 |\n\n| 待办 | 填写 |\n|---|---|\n| 当前风险和待确认问题 | ____ |\n| 复查项目、截止日、负责岗位 | ____ |\n| 异常结果回收、医生复核和下一步 | ____ |\n| 联系状态及升级记录 | ____ |\n| 完成日期与回执位置 | ____ |"
+    }
+  ],
+  "chronic": {
+    "slug": "diabetes",
+    "name": "糖尿病前期与2型糖尿病",
+    "sort_order": 2,
+    "sections": {
+      "precheck": "### 检前问什么\n\n确认是否真正空腹、近期感染或应激、妊娠史和糖皮质激素用药；询问多饮、多尿、体重下降及既往妊娠糖尿病、家族史。贫血、近期失血输血、血红蛋白变异和部分肾病可能影响 HbA1c 解释。\n\n### 客户沟通\n\n> “这两项代表不同时间尺度的血糖状况。先查清采样和影响因素，再决定复验哪项。若确认处在进展风险较高阶段，可以尽早干预。”\n\n**演练**：用第一道案例模拟问询，分别写出可以进入常规检查、须临时调整项目和需要先临床评估时的下一步。",
+      "design": "| 人群 | 项目与决策 |\n|---|---|\n| 团检基础与常规成人 | 按院内成人风险和筛查规范选择标准静脉血糖；确认禁食、检验质量及异常反馈责任。低风险者不因一次边界读数自动追加胰岛素全套。 |\n| 高风险与选择性评估 | 结果边界或不一致时核对影响因素，临床医生可选择复验超过诊断阈值的指标或安排标准口服葡萄糖耐量试验。HbA1c 需采用合格方法；影响红细胞周转时优先用血浆葡萄糖证据。 |\n| 已确诊或在治疗 | 已确诊者按医生目标跟踪 HbA1c，并核对低血糖、血压血脂、eGFR/UACR、眼底和足部管理是否已纳入专科计划。单次筛查糖化不能替代长期随访。 |\n\n**自学思考**：比较常规项目、选择性加项和已有疾病监测。找出一项只有在特定条件下才会改变判断的检查，并对照指南适用人群。\n\n**依据**：[中国糖尿病防治指南（2024版）](https://www.sinomed.ac.cn/article.do?ui=2025169706)；[Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026](https://doi.org/10.2337/dc26-S002)；[Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes—2026](https://diabetesjournals.org/care/article/49/Supplement_1/S50/163924/3-Prevention-or-Delay-of-Diabetes-and-Associated)；[Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026](https://doi.org/10.2337/dc26-S006)。",
+      "interpretation": "无典型症状时孤立的糖尿病范围异常通常须确认；有典型高血糖症状时走临床诊断流程。美国 ADA 和国内指南的空腹血糖受损口径可能不同，工作包不用同一个阈值跨体系贴标签。HbA1c 的诊断界值与确诊后的个体目标应分开解释。明显消瘦伴呕吐、脱水或呼吸异常，须及时临床评估。\n\n**自学思考**：本次异常能提示什么？还缺哪些证据？哪些发现会改变复查或就医的紧迫性？\n\n**依据**：[中国糖尿病防治指南（2024版）](https://www.sinomed.ac.cn/article.do?ui=2025169706)；[Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026](https://doi.org/10.2337/dc26-S002)；[Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes—2026](https://diabetesjournals.org/care/article/49/Supplement_1/S50/163924/3-Prevention-or-Delay-of-Diabetes-and-Associated)；[Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026](https://doi.org/10.2337/dc26-S006)。",
+      "followup": "首次异常在报告出具前指定复验项目和负责医生；指标不一致优先核实异常项与影响因素。高风险未确诊者建立体重、运动和复验计划。治疗未达标或有低血糖，交诊疗团队提前评估；稳定者按个体计划复查并确认肾、足、眼评估有实际反馈。\n\n| 状态 | 复查项目、复诊或转介时点 |\n|---|---|\n| 首次异常 | 及时确认诊断范围异常，出现疑急症即转急诊 |\n| 高风险未确诊 | 糖尿病前期可参照 ADA 至少每年监测，风险高者缩短 |\n| 已确诊未控制或出现变化 | 治疗近期调整或未达标常约每3个月评估HbA1c，低血糖可更早 |\n| 已确诊且稳定 | ADA 建议稳定达标成人至少每年两次评估血糖状态，实际按专科计划 |\n\n**院内执行**：负责医生确认紧迫性和项目，管理人员登记预约并回收结果。未回应时依本院规则重联，按风险交回负责医生，记录失访及处理结论。收到检验或就诊回执、医生确认下一步并告知受检者后，更新闭环状态。\n\n| 待办 | 填写 |\n|---|---|\n| 当前风险和待确认问题 | ____ |\n| 复查项目、截止日、负责岗位 | ____ |\n| 异常结果回收、医生复核和下一步 | ____ |\n| 联系状态及升级记录 | ____ |\n| 完成日期与回执位置 | ____ |"
+    },
+    "guidelines": "| 指南及发布信息 | 适用范围 | 核验日 |\n|---|---|---|\n| [中国糖尿病防治指南（2024版）](https://www.sinomed.ac.cn/article.do?ui=2025169706) · 中华医学会糖尿病学分会 · 2025（2024版） | 国内糖尿病诊断、分型、预防与综合管理 | 2026-11-18 |\n| [Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026](https://doi.org/10.2337/dc26-S002) · ADA·Diabetes Care · 2026卷 | 诊断分型和结果确认 | 2026-11-18 |\n| [Prevention or Delay of Diabetes and Associated Comorbidities: Standards of Care in Diabetes—2026](https://diabetesjournals.org/care/article/49/Supplement_1/S50/163924/3-Prevention-or-Delay-of-Diabetes-and-Associated) · ADA·Diabetes Care · 2026卷 | 糖尿病前期与高危人群 | 2026-11-18 |\n| [Glycemic Goals, Hypoglycemia, and Hyperglycemic Crises: Standards of Care in Diabetes—2026](https://doi.org/10.2337/dc26-S006) · ADA·Diabetes Care · 2026卷 | 治疗中血糖目标、监测频率与低血糖 | 2026-11-18 |\n\n### 中外对照与精读任务\n\n选读中国指南诊断分型、三级预防与综合目标，ADA 标准读确认诊断及预防章节。对照空腹血糖受损口径、HbA1c 检验条件和糖尿病预防计划纳入条件。\n\n**输出**：用两栏写下两份指南各自回答的临床问题，并圈出一处会改变本院报告、项目或转诊的判断。查不到原刊条款、具体日期或全文时保留待核验状态。",
+    "revision_notes": "个人循证自学版：调整研修任务与解读工具。",
+    "affected_decisions": "学习重点为理解异常、证据的适用性及长期管理。"
+  }
+}

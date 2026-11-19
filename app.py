@@ -13,12 +13,15 @@ import mistune, bleach
 from fastapi import FastAPI, Request, HTTPException, UploadFile, File, Depends
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, Field, ValidationError
+from pydantic import BaseModel, Field, ValidationError, model_validator
+from durable_sqlite import connection
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DB = pathlib.Path(os.getenv("EVIDENCE_DB", str(ROOT / "data.sqlite3")))
+BUILD_TIME_FILE = ROOT / ".site-build-time"
+MANAGED_DB = bool(os.getenv("DATABASE_URL")) and not bool(os.getenv("EVIDENCE_DB"))
 TOKEN = os.getenv("EVIDENCE_ADMIN_TOKEN", "")
-app = FastAPI(title="全球体检与健康管理循证研修中心", docs_url=None, redoc_url=None)
+app = FastAPI(title="体检循证与健康管理工作台", docs_url=None, redoc_url=None)
 app.mount("/static", StaticFiles(directory=str(ROOT / "static")), name="static")
 md = mistune.create_markdown(
     escape=True, plugins=["table", "strikethrough", "url", "task_lists"]
@@ -56,14 +59,8 @@ ALLOWED_ATTRS = {
 
 @contextmanager
 def conn():
-    c = sqlite3.connect(DB)
-    try:
-        c.row_factory = sqlite3.Row
-        c.execute("PRAGMA foreign_keys=ON")
-        with c:
-            yield c
-    finally:
-        c.close()
+    with connection(DB, managed=MANAGED_DB) as c:
+        yield c
 
 
 def init_db():
@@ -79,7 +76,15 @@ def init_db():
   CREATE TABLE IF NOT EXISTS bookmarks(ref_id INTEGER PRIMARY KEY REFERENCES papers(id) ON DELETE CASCADE);
   CREATE TABLE IF NOT EXISTS notes(course_id INTEGER PRIMARY KEY REFERENCES courses(id) ON DELETE CASCADE,body TEXT DEFAULT '');
   CREATE TABLE IF NOT EXISTS tools(id INTEGER PRIMARY KEY,course_id INTEGER NOT NULL REFERENCES courses(id) ON DELETE CASCADE,kind TEXT NOT NULL,title TEXT NOT NULL,content TEXT NOT NULL);
-  CREATE TABLE IF NOT EXISTS course_categories(course_id INTEGER PRIMARY KEY REFERENCES courses(id) ON DELETE CASCADE,system TEXT NOT NULL);"""
+  CREATE TABLE IF NOT EXISTS course_categories(course_id INTEGER PRIMARY KEY REFERENCES courses(id) ON DELETE CASCADE,system TEXT NOT NULL);
+  CREATE TABLE IF NOT EXISTS chronic_versions(
+    course_id INTEGER PRIMARY KEY REFERENCES courses(id) ON DELETE CASCADE,
+    slug TEXT NOT NULL, name TEXT NOT NULL, sort_order INTEGER NOT NULL,
+    revision INTEGER NOT NULL, metadata TEXT NOT NULL, UNIQUE(slug, revision)
+  );
+  CREATE VIEW IF NOT EXISTS daily_course_versions AS
+    SELECT c.*, ROW_NUMBER() OVER (PARTITION BY c.day ORDER BY c.version) AS daily_version
+    FROM courses c WHERE NOT EXISTS (SELECT 1 FROM chronic_versions v WHERE v.course_id=c.id);"""
         )
         columns = {row["name"] for row in c.execute("PRAGMA table_info(papers)")}
         for column in ("source", "full_text_url"):
@@ -104,7 +109,7 @@ def auth(req: Request):
 
 def html(text):
     out = bleach.clean(
-        md(text),
+        str(md(text)),
         tags=ALLOWED_TAGS,
         attributes=ALLOWED_ATTRS,
         protocols=["http", "https", "mailto"],
@@ -175,6 +180,23 @@ class Question(BaseModel):
     explanation: str
 
 
+class ChronicSections(BaseModel):
+    precheck: str = Field(min_length=1)
+    design: str = Field(min_length=1)
+    interpretation: str = Field(min_length=1)
+    followup: str = Field(min_length=1)
+
+
+class ChronicPackage(BaseModel):
+    slug: str = Field(pattern=r"^[a-z0-9]+(?:-[a-z0-9]+)*$", max_length=100)
+    name: str = Field(min_length=1, max_length=100)
+    sort_order: int = Field(ge=1)
+    sections: ChronicSections
+    guidelines: str = Field(min_length=1)
+    revision_notes: str = Field(min_length=1)
+    affected_decisions: str = Field(min_length=1)
+
+
 class Course(BaseModel):
     day: str
     title: str = Field(min_length=1, max_length=250)
@@ -186,6 +208,16 @@ class Course(BaseModel):
     questions: list[Question] = []
     tools: list[Tool] = []
     source: str = "manual"
+    chronic: ChronicPackage | None = None
+
+    @model_validator(mode="after")
+    def check_chronic_package(self):
+        if self.chronic:
+            if not 60 <= self.minutes <= 90:
+                raise ValueError("慢病工作包的建议学习时长须为 60–90 分钟")
+            if len(self.questions) < 3 or not self.references or not self.tools:
+                raise ValueError("慢病工作包须含至少三题、指南来源和工作工具")
+        return self
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -193,18 +225,34 @@ def index():
     return (ROOT / "static" / "index.html").read_text(encoding="utf-8")
 
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 @app.get("/api/status")
 def status():
+    # SQLite creates course timestamps in UTC. Do not use the snapshot's
+    # revision timestamp: learner notes, answers, and progress also update it.
+    latest = one("SELECT MAX(created_at) AS latest FROM courses") or {}
+    course_time = latest.get("latest")
+    try:
+        built_time = BUILD_TIME_FILE.read_text(encoding="utf-8").strip()
+        datetime.datetime.fromisoformat(built_time.replace("Z", "+00:00"))
+    except (OSError, ValueError):
+        built_time = None
     return {
         "write_locked": not bool(TOKEN),
         "today": datetime.datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat(),
         "sync": "manual-import",
+        "site_build_at": built_time,
+        "course_import_at": course_time.replace(" ", "T") + "Z" if course_time else None,
     }
 
 
 @app.get("/api/courses")
 def courses(q: str = "", topic: str = "", day: str = ""):
-    sql = """SELECT c.id,c.day,c.title,c.topic,c.minutes,c.version,c.source,c.created_at,COALESCE(g.system,'') system,(SELECT COUNT(*) FROM questions WHERE course_id=c.id) question_count FROM courses c LEFT JOIN course_categories g ON g.course_id=c.id WHERE c.version=(SELECT MAX(version) FROM courses WHERE day=c.day)"""
+    sql = """SELECT c.id,c.day,c.title,c.topic,c.minutes,c.daily_version AS version,c.source,c.created_at,COALESCE(g.system,'') system,(SELECT COUNT(*) FROM questions WHERE course_id=c.id) question_count FROM daily_course_versions c LEFT JOIN course_categories g ON g.course_id=c.id WHERE c.daily_version=(SELECT MAX(daily_version) FROM daily_course_versions WHERE day=c.day)"""
     args = []
     if q:
         sql += " AND (c.title LIKE ? OR c.topic LIKE ? OR c.content LIKE ?)"
@@ -218,6 +266,17 @@ def courses(q: str = "", topic: str = "", day: str = ""):
     return rows(sql + " ORDER BY c.day DESC", args)
 
 
+@app.get("/api/chronic")
+def chronic_packages():
+    return rows("""
+        SELECT v.course_id AS id, v.slug, v.name, v.revision AS version,
+               c.title, c.day, c.minutes
+        FROM chronic_versions v JOIN courses c ON c.id=v.course_id
+        WHERE v.revision=(SELECT MAX(revision) FROM chronic_versions WHERE slug=v.slug)
+        ORDER BY v.sort_order, v.slug
+    """)
+
+
 @app.get("/api/courses/{cid}")
 def course(cid: int):
     r = one("SELECT * FROM courses WHERE id=?", (cid,))
@@ -228,10 +287,33 @@ def course(cid: int):
     r["questions"] = rows(
         "SELECT id,question,options FROM questions WHERE course_id=?", (cid,)
     )
-    r["versions"] = rows(
-        "SELECT id,version,created_at FROM courses WHERE day=? ORDER BY version DESC",
-        (r["day"],),
-    )
+    chronic = one("SELECT * FROM chronic_versions WHERE course_id=?", (cid,))
+    if chronic:
+        meta = json.loads(chronic["metadata"])
+        r["version"] = chronic["revision"]
+        r["chronic"] = {
+            **meta,
+            "sections": {key: html(value) for key, value in meta["sections"].items()},
+            "guidelines": html(meta["guidelines"]),
+        }
+        r["versions"] = rows(
+            """
+            SELECT c.id, v.revision AS version, c.day, c.created_at
+            FROM chronic_versions v JOIN courses c ON c.id=v.course_id
+            WHERE v.slug=? ORDER BY v.revision DESC
+        """,
+            (chronic["slug"],),
+        )
+        r["tools"] = course_tools(cid)
+    else:
+        r["versions"] = rows(
+            """
+            SELECT id, daily_version AS version, created_at FROM daily_course_versions
+            WHERE day=? ORDER BY daily_version DESC
+        """,
+            (r["day"],),
+        )
+        r["version"] = next(v["version"] for v in r["versions"] if v["id"] == cid)
     for q in r["questions"]:
         q["options"] = json.loads(q["options"])
     return r
@@ -271,7 +353,7 @@ def import_course(data: Course):
     for q in data.questions:
         if not 0 <= q.answer < len(q.options):
             raise HTTPException(422, "题目答案索引无效")
-    payload = data.model_dump()
+    payload = data.model_dump(exclude_none=True)
     payload["day"] = day
     checksum = hashlib.sha256(
         json.dumps(payload, sort_keys=True, ensure_ascii=False).encode()
@@ -332,7 +414,28 @@ def import_course(data: Course):
                 "INSERT INTO tools(course_id,kind,title,content) VALUES(?,?,?,?)",
                 (cid, tool.kind, tool.title, tool.content),
             )
-    return {"id": cid, "version": ver, "duplicate": False}
+        if data.chronic:
+            chronic = data.chronic
+            revision = c.execute(
+                "SELECT COALESCE(MAX(revision),0)+1 FROM chronic_versions WHERE slug=?",
+                (chronic.slug,),
+            ).fetchone()[0]
+            c.execute(
+                "INSERT INTO chronic_versions VALUES (?,?,?,?,?,?)",
+                (
+                    cid,
+                    chronic.slug,
+                    chronic.name,
+                    chronic.sort_order,
+                    revision,
+                    chronic.model_dump_json(),
+                ),
+            )
+        else:
+            revision = c.execute(
+                "SELECT daily_version FROM daily_course_versions WHERE id=?", (cid,)
+            ).fetchone()[0]
+    return {"id": cid, "version": revision, "duplicate": False}
 
 
 @app.post("/api/upload", dependencies=[Depends(auth)])
@@ -346,7 +449,7 @@ async def upload(file: UploadFile = File(...)):
         content = raw.decode("utf-8-sig")
     except UnicodeDecodeError:
         raise HTTPException(422, "请使用 UTF-8 文件")
-    if file.filename.lower().endswith(".json"):
+    if (file.filename or "").lower().endswith(".json"):
         try:
             return import_course(Course.model_validate_json(content))
         except ValidationError:
@@ -372,11 +475,23 @@ def references(q: str = ""):
 
 @app.get("/api/tools")
 def tools():
-    items = rows(
-        "SELECT t.*,c.day,c.version FROM tools t JOIN courses c ON c.id=t.course_id ORDER BY c.day DESC,c.version DESC,t.id"
-    )
+    return course_tools()
+
+
+def course_tools(cid=None):
+    sql = """
+        SELECT t.*, c.day, COALESCE(v.revision, d.daily_version) AS version
+        FROM tools t JOIN courses c ON c.id=t.course_id
+        LEFT JOIN chronic_versions v ON v.course_id=c.id
+        LEFT JOIN daily_course_versions d ON d.id=c.id
+    """
+    params = ()
+    if cid is not None:
+        sql += " WHERE t.course_id=?"
+        params = (cid,)
+    items = rows(sql + " ORDER BY c.day DESC, c.version DESC, t.id", params)
     for item in items:
-        item["html"] = html(item.pop("content"))
+        item["html"] = html(item["content"])
     return items
 
 
@@ -457,10 +572,13 @@ def bookmark(rid: int, data: BookmarkUpdate):
 
 @app.get("/api/dashboard", dependencies=[Depends(auth)])
 def dashboard():
+    course_count = one("SELECT COUNT(DISTINCT day) n FROM courses") or {"n": 0}
+    completed = one("SELECT COUNT(*) n FROM progress WHERE completed=1") or {"n": 0}
+    seconds = one("SELECT COALESCE(SUM(seconds),0) n FROM progress") or {"n": 0}
     return {
-        "courses": one("SELECT COUNT(DISTINCT day) n FROM courses")["n"],
-        "completed": one("SELECT COUNT(*) n FROM progress WHERE completed=1")["n"],
-        "seconds": one("SELECT COALESCE(SUM(seconds),0) n FROM progress")["n"],
+        "courses": course_count["n"],
+        "completed": completed["n"],
+        "seconds": seconds["n"],
         "attempts": one(
             "SELECT COUNT(*) n,COALESCE(SUM(correct),0) correct FROM attempts"
         ),
@@ -468,10 +586,10 @@ def dashboard():
             "SELECT r.*,c.day FROM bookmarks b JOIN papers r ON r.id=b.ref_id JOIN courses c ON c.id=r.course_id"
         ),
         "records": rows(
-            """SELECT c.id,c.title,c.day,c.version,c.topic,c.minutes,p.seconds,p.completed,n.body,
+            """SELECT c.id,c.title,c.day,COALESCE(v.revision,d.daily_version) version,c.topic,c.minutes,p.seconds,p.completed,n.body,
     (SELECT COUNT(*) FROM attempts a JOIN questions q ON a.question_id=q.id WHERE q.course_id=c.id) attempts,
     (SELECT COUNT(*) FROM attempts a JOIN questions q ON a.question_id=q.id WHERE q.course_id=c.id AND a.correct=1) correct
-    FROM courses c LEFT JOIN progress p ON p.course_id=c.id LEFT JOIN notes n ON n.course_id=c.id
+    FROM courses c LEFT JOIN chronic_versions v ON v.course_id=c.id LEFT JOIN daily_course_versions d ON d.id=c.id LEFT JOIN progress p ON p.course_id=c.id LEFT JOIN notes n ON n.course_id=c.id
     WHERE p.course_id IS NOT NULL OR n.body<>'' OR attempts>0 ORDER BY c.day DESC,c.version DESC"""
         ),
     }
@@ -493,6 +611,7 @@ def export_data():
                 "notes",
                 "tools",
                 "course_categories",
+                "chronic_versions",
             )
         }
     return JSONResponse(
@@ -506,4 +625,6 @@ async def prevent_api_cache(request: Request, call_next):
     response = await call_next(request)
     if request.url.path.startswith("/api/"):
         response.headers["Cache-Control"] = "no-store"
+    elif request.url.path == "/" or request.url.path.startswith("/static/"):
+        response.headers["Cache-Control"] = "no-cache"
     return response

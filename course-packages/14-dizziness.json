@@ -1,0 +1,92 @@
+{
+  "day": "2026-11-18",
+  "title": "头晕、眩晕与体检分流｜体检学习工作包",
+  "topic": "头晕、眩晕与体检分流",
+  "system": "神经与耳科",
+  "minutes": 75,
+  "content": "## 体检发现\n“头晕”可能指旋转、站立不稳或近晕厥。时间、触发和伴随体征决定分流，症状词本身不能确诊。\n\n## 最值得干预的地方\n先识别卒中与心血管急症，再根据发作模式区分位置诱发、持续性头晕或近晕厥。避免直接归咎于颈椎退变。\n\n## 75 分钟学习安排\n\n| 环节 | 时间 | 完成标准 |\n|---|---:|---|\n| 检前沟通 | 8 分钟 | 理解哪些病史会改变对体检发现的判断 |\n| 项目设计 | 12 分钟 | 比较常规检查、选择性加项和已有疾病监测的不同用途 |\n| 检后解读 | 12 分钟 | 区分结果能提示什么、还需要哪些证据 |\n| 复查随访 | 8 分钟 | 理解复查指标、时间及什么变化会改变判断 |\n| 指南精读与对照 | 20 分钟 | 记录两份指南适用范围、一个差异和一个适用范围或例外 |\n| 三道案例与复盘 | 15 分钟 | 各题先作答，记录误判原因并对照原文 |\n\n本页用于个人循证学习。重点是看懂体检发现、核对指南证据，并理解可持续的健康管理。\n",
+  "source": "研修中心编写 · 指南检索 2026-11-18",
+  "references": [
+    {
+      "title": "GRACE-3: Acute Dizziness and Vertigo in the Emergency Department",
+      "source": "Society for Academic Emergency Medicine · 2023",
+      "url": "https://www.saem.org/publications/grace/grace-3",
+      "full_text_url": "https://www.saem.org/publications/grace/grace-3",
+      "doi": "",
+      "pmid": "",
+      "access": "原文入口见链接，网络与授权状态可能变化"
+    },
+    {
+      "title": "Suspected neurological conditions: recognition and referral（NG127）",
+      "source": "NICE · 在线修订版",
+      "url": "https://www.nice.org.uk/guidance/ng127",
+      "full_text_url": "https://www.nice.org.uk/guidance/ng127/chapter/Recommendations-for-adults-aged-over-16",
+      "doi": "",
+      "pmid": "",
+      "access": "原文入口见链接，网络与授权状态可能变化"
+    }
+  ],
+  "questions": [
+    {
+      "question": "新发持续眩晕、走路明显不稳并复视，应怎样处理？",
+      "options": [
+        "按卒中风险紧急分流",
+        "先按颈椎退变处理",
+        "约下个月检查"
+      ],
+      "answer": 0,
+      "explanation": "复视和新步态异常须警惕中枢病因，两种延迟安排均不合适。\n依据：GRACE-3: Acute Dizziness and Vertigo in the Emergency Department; Suspected neurological conditions: recognition and referral（NG127）。请对照本页指南原文。"
+    },
+    {
+      "question": "翻身数秒旋转感，间歇完全好转且无警示，下一步？",
+      "options": [
+        "常规做头颈CT",
+        "由受训医生对照位置性眩晕路径评估",
+        "一律用HINTS排卒中"
+      ],
+      "answer": 1,
+      "explanation": "典型诱发短发作适合位置评估，HINTS不适用于这一表现。\n依据：GRACE-3: Acute Dizziness and Vertigo in the Emergency Department; Suspected neurological conditions: recognition and referral（NG127）。请对照本页指南原文。"
+    },
+    {
+      "question": "起立眼前发黑伴心悸，最应怎么走？",
+      "options": [
+        "按耳石症诊断",
+        "归因于颈椎影像",
+        "查用药、体位与心血管线索，按临床紧迫性评估"
+      ],
+      "answer": 2,
+      "explanation": "近晕厥描述要考虑不同于眩晕的机制，有胸痛或晕厥时需升级处理。\n依据：GRACE-3: Acute Dizziness and Vertigo in the Emergency Department; Suspected neurological conditions: recognition and referral（NG127）。请对照本页指南原文。"
+    }
+  ],
+  "tools": [
+    {
+      "kind": "体检审核清单",
+      "title": "头晕、眩晕与体检分流｜检前信息与结果核对清单",
+      "content": "## 重点问询\n\n问准确起病时间、是否持续或反复、转头或起立触发、步态、复视、言语和肢体症状、心悸胸痛、听力变化、用药及低血糖风险。急性持续头晕伴明显步态不稳、新复视或神经缺损，及时急诊；胸痛或真正晕厥需依心血管急症分流。\n\n- [ ] 核对原报告、单位、历年趋势及测量或采样条件。\n- [ ] 复述关键病史、用药和是否有急性警示。\n- [ ] 区分本次发现、待确认诊断和已确诊管理状态。\n- [ ] 与受检者核对下一步、联系渠道及责任人。\n\n“我们先确认这次头晕是什么时候开始、什么动作会触发，以及能否正常走路。不同类型需要不同评估。”"
+    },
+    {
+      "kind": "报告解读模板",
+      "title": "头晕、眩晕与体检分流｜检查项目与结果解读参考",
+      "content": "| 人群 | 项目与决策 |\n|---|---|\n| 团检基础与常规成人 | 体检先记录症状和生命体征；根据情境由临床判断血糖、体位血压、心电图或神经查体。无症状一般体检不因此加做所谓眩晕全套。 |\n| 高风险与选择性评估 | 短暂且明确体位诱发者可由受训临床人员做位置诱发试验。HINTS 仅在适当的急性前庭综合征场景由受训人员使用，不用于一般头晕、无症状筛查或自行判断。影像由急诊或专科根据风险选择。 |\n| 已确诊或在治疗 | 记录发作频次、持续时间、触发、跌倒、听觉症状和功能。确诊后跟踪针对病因的治疗与复发计划。 |\n\n## 读结果时问自己\n\n这个发现能说明什么？历年变化、症状和用药是否会影响判断？下一次检查需要回答什么问题？\n\n## 异常分流\n\n急性持续性眩晕可由外周或中枢病因造成。能够说出“天旋地转”不能排除卒中。头位诱发的短发作提示评估 BPPV，站起发作则可考虑体位性因素，但遇警示信号应优先处理。"
+    },
+    {
+      "kind": "随访工具",
+      "title": "头晕、眩晕与体检分流｜复查随访与闭环记录",
+      "content": "| 状态 | 复查项目、复诊或转介时点 |\n|---|---|\n| 首次异常 | 急性神经或心血管警示即时分流 |\n| 高风险未确诊 | 近期稳定发作按时间与触发分类转门诊 |\n| 已确诊未控制或出现变化 | 追踪跌倒、听力以及发作类型 |\n| 已确诊且稳定 | 明确复发时怎么联系、哪些信号及时急诊 |\n\n| 待办 | 填写 |\n|---|---|\n| 当前风险和待确认问题 | ____ |\n| 复查项目、截止日、负责岗位 | ____ |\n| 异常结果回收、医生复核和下一步 | ____ |\n| 联系状态及升级记录 | ____ |\n| 完成日期与回执位置 | ____ |"
+    }
+  ],
+  "chronic": {
+    "slug": "dizziness",
+    "name": "头晕、眩晕与体检分流",
+    "sort_order": 14,
+    "sections": {
+      "precheck": "### 检前问什么\n\n问准确起病时间、是否持续或反复、转头或起立触发、步态、复视、言语和肢体症状、心悸胸痛、听力变化、用药及低血糖风险。急性持续头晕伴明显步态不稳、新复视或神经缺损，及时急诊；胸痛或真正晕厥需依心血管急症分流。\n\n### 客户沟通\n\n> “我们先确认这次头晕是什么时候开始、什么动作会触发，以及能否正常走路。不同类型需要不同评估。”\n\n**演练**：用第一道案例模拟问询，分别写出可以进入常规检查、须临时调整项目和需要先临床评估时的下一步。",
+      "design": "| 人群 | 项目与决策 |\n|---|---|\n| 团检基础与常规成人 | 体检先记录症状和生命体征；根据情境由临床判断血糖、体位血压、心电图或神经查体。无症状一般体检不因此加做所谓眩晕全套。 |\n| 高风险与选择性评估 | 短暂且明确体位诱发者可由受训临床人员做位置诱发试验。HINTS 仅在适当的急性前庭综合征场景由受训人员使用，不用于一般头晕、无症状筛查或自行判断。影像由急诊或专科根据风险选择。 |\n| 已确诊或在治疗 | 记录发作频次、持续时间、触发、跌倒、听觉症状和功能。确诊后跟踪针对病因的治疗与复发计划。 |\n\n**自学思考**：比较常规项目、选择性加项和已有疾病监测。找出一项只有在特定条件下才会改变判断的检查，并对照指南适用人群。\n\n**依据**：[GRACE-3: Acute Dizziness and Vertigo in the Emergency Department](https://www.saem.org/publications/grace/grace-3)；[Suspected neurological conditions: recognition and referral（NG127）](https://www.nice.org.uk/guidance/ng127)。",
+      "interpretation": "急性持续性眩晕可由外周或中枢病因造成。能够说出“天旋地转”不能排除卒中。头位诱发的短发作提示评估 BPPV，站起发作则可考虑体位性因素，但遇警示信号应优先处理。\n\n**自学思考**：本次异常能提示什么？还缺哪些证据？哪些发现会改变复查或就医的紧迫性？\n\n**依据**：[GRACE-3: Acute Dizziness and Vertigo in the Emergency Department](https://www.saem.org/publications/grace/grace-3)；[Suspected neurological conditions: recognition and referral（NG127）](https://www.nice.org.uk/guidance/ng127)。",
+      "followup": "有急症线索即时转介并记录起病时间；稳定反复发作依最可能系统约神经、耳科或心血管评估。记录跌倒防护、复诊和回收诊断或检查结论。\n\n| 状态 | 复查项目、复诊或转介时点 |\n|---|---|\n| 首次异常 | 急性神经或心血管警示即时分流 |\n| 高风险未确诊 | 近期稳定发作按时间与触发分类转门诊 |\n| 已确诊未控制或出现变化 | 追踪跌倒、听力以及发作类型 |\n| 已确诊且稳定 | 明确复发时怎么联系、哪些信号及时急诊 |\n\n**院内执行**：负责医生确认紧迫性和项目，管理人员登记预约并回收结果。未回应时依本院规则重联，按风险交回负责医生，记录失访及处理结论。收到检验或就诊回执、医生确认下一步并告知受检者后，更新闭环状态。\n\n| 待办 | 填写 |\n|---|---|\n| 当前风险和待确认问题 | ____ |\n| 复查项目、截止日、负责岗位 | ____ |\n| 异常结果回收、医生复核和下一步 | ____ |\n| 联系状态及升级记录 | ____ |\n| 完成日期与回执位置 | ____ |"
+    },
+    "guidelines": "| 指南及发布信息 | 适用范围 | 核验日 |\n|---|---|---|\n| [GRACE-3: Acute Dizziness and Vertigo in the Emergency Department](https://www.saem.org/publications/grace/grace-3) · Society for Academic Emergency Medicine · 2023 | 急诊成人急性头晕和眩晕 | 2026-11-18 |\n| [Suspected neurological conditions: recognition and referral（NG127）](https://www.nice.org.uk/guidance/ng127) · NICE · 在线修订版 | 成人头晕及卒中警示 | 2026-11-18 |\n\n### 中外对照与精读任务\n\n精读 GRACE-3 的时间与触发分类、受训人员条件，结合 NICE NG127 急性前庭综合征及卒中转诊。GRACE-3 面向急诊；体检应用重点是安全识别与转介。\n\n**输出**：用两栏写下两份指南各自回答的临床问题，并圈出一处会改变本院报告、项目或转诊的判断。查不到原刊条款、具体日期或全文时保留待核验状态。",
+    "revision_notes": "个人循证自学版：调整研修任务与解读工具。",
+    "affected_decisions": "学习重点为理解异常、证据的适用性及长期管理。"
+  }
+}

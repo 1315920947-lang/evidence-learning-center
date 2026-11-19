@@ -1,0 +1,101 @@
+{
+  "day": "2026-11-18",
+  "title": "颈椎常见问题与颈肩痛｜体检学习工作包",
+  "topic": "颈椎常见问题与颈肩痛",
+  "system": "骨骼肌肉系统",
+  "minutes": 75,
+  "content": "## 体检发现\n体检报告写颈椎曲度变直、骨赘或椎间盘膨出，受检者可能无症状，也可能有颈痛、手麻、上肢放射痛或手部不灵活。\n\n## 最值得干预的地方\n把影像描述、颈肩肌肉痛、神经根受累线索和脊髓受压警示分开。最有价值的是识别进行性神经异常与需要改变处理的症状，减少仅因影像词汇而重复拍片。\n\n## 75 分钟学习安排\n\n| 环节 | 时间 | 完成标准 |\n|---|---:|---|\n| 检前沟通 | 8 分钟 | 理解哪些病史会改变对体检发现的判断 |\n| 项目设计 | 12 分钟 | 比较常规检查、选择性加项和已有疾病监测的不同用途 |\n| 检后解读 | 12 分钟 | 区分结果能提示什么、还需要哪些证据 |\n| 复查随访 | 8 分钟 | 理解复查指标、时间及什么变化会改变判断 |\n| 指南精读与对照 | 20 分钟 | 记录两份指南适用范围、一个差异和一个适用范围或例外 |\n| 三道案例与复盘 | 15 分钟 | 各题先作答，记录误判原因并对照原文 |\n\n本页用于个人循证学习。重点是看懂体检发现、核对指南证据，并理解可持续的健康管理。\n",
+  "source": "研修中心编写 · 指南检索 2026-11-18",
+  "references": [
+    {
+      "title": "中国颈椎退行性病变诊疗指南（2025版）",
+      "source": "指南制订专家组·中华疼痛学杂志 · 2025-08",
+      "url": "https://medtion-image.medtion.com/uploads/1/file/public/202601/20260108162411_9u47jwmdqv.pdf",
+      "full_text_url": "https://medtion-image.medtion.com/uploads/1/file/public/202601/20260108162411_9u47jwmdqv.pdf",
+      "doi": "",
+      "pmid": "",
+      "access": "原文入口见链接，网络与授权状态可能变化"
+    },
+    {
+      "title": "ACR Appropriateness Criteria: Cervical Pain or Cervical Radiculopathy 2024 Update",
+      "source": "American College of Radiology · 2024修订，2025发表",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40409873/",
+      "full_text_url": "https://acsearch.acr.org/docs/69426/narrative/",
+      "doi": "",
+      "pmid": "40409873",
+      "access": "原文入口见链接，网络与授权状态可能变化"
+    },
+    {
+      "title": "Suspected neurological conditions: recognition and referral（NG127）",
+      "source": "NICE · 在线修订版",
+      "url": "https://www.nice.org.uk/guidance/ng127",
+      "full_text_url": "https://www.nice.org.uk/guidance/ng127/chapter/Recommendations-for-adults-aged-over-16",
+      "doi": "",
+      "pmid": "",
+      "access": "原文入口见链接，网络与授权状态可能变化"
+    }
+  ],
+  "questions": [
+    {
+      "question": "无症状，报告写轻度骨赘，如何处理？",
+      "options": [
+        "解释偶然发现，记录关注信号",
+        "确诊脊髓压迫",
+        "每半年做MRI"
+      ],
+      "answer": 0,
+      "explanation": "退变描述不能单独诊断脊髓受压；没有症状与明确临床问题时不需机械重复影像。\n依据：中国颈椎退行性病变诊疗指南（2025版）; ACR Appropriateness Criteria: Cervical Pain or Cervical Radiculopathy 2024 Update; Suspected neurological conditions: recognition and referral（NG127）。请对照本页指南原文。"
+    },
+    {
+      "question": "近期手笨、扣扣子困难并步态不稳，如何分流？",
+      "options": [
+        "归因于工作姿势",
+        "尽快临床评估是否有脊髓受累",
+        "只给颈肩拉伸单"
+      ],
+      "answer": 1,
+      "explanation": "手部精细运动与步态异常的组合需要查神经风险，两种居家处理都可能延误评估。\n依据：中国颈椎退行性病变诊疗指南（2025版）; ACR Appropriateness Criteria: Cervical Pain or Cervical Radiculopathy 2024 Update; Suspected neurological conditions: recognition and referral（NG127）。请对照本页指南原文。"
+    },
+    {
+      "question": "近期急性头晕伴复视，既往有颈椎退变，下一步？",
+      "options": [
+        "按颈椎病随访",
+        "先拍普通颈椎片",
+        "按神经警示症状启动急诊评估"
+      ],
+      "answer": 2,
+      "explanation": "退变不能解释急性复视，立即优先排查中枢原因。\n依据：中国颈椎退行性病变诊疗指南（2025版）; ACR Appropriateness Criteria: Cervical Pain or Cervical Radiculopathy 2024 Update; Suspected neurological conditions: recognition and referral（NG127）。请对照本页指南原文。"
+    }
+  ],
+  "tools": [
+    {
+      "kind": "体检审核清单",
+      "title": "颈椎常见问题与颈肩痛｜检前信息与结果核对清单",
+      "content": "## 重点问询\n\n记录外伤、起病速度、颈肩痛与上肢放射的关系、麻木分布、力量下降、手部精细动作改变、步态不稳、发热、肿瘤史。进行性无力、手笨伴步态异常或近期明显外伤应及时进入临床评估。\n\n- [ ] 核对原报告、单位、历年趋势及测量或采样条件。\n- [ ] 复述关键病史、用药和是否有急性警示。\n- [ ] 区分本次发现、待确认诊断和已确诊管理状态。\n- [ ] 与受检者核对下一步、联系渠道及责任人。\n\n“片子上的退变描述需要和实际症状、力量和步态一起看。我们先判断有没有神经受累线索，再决定是否需要进一步检查。”"
+    },
+    {
+      "kind": "报告解读模板",
+      "title": "颈椎常见问题与颈肩痛｜检查项目与结果解读参考",
+      "content": "| 人群 | 项目与决策 |\n|---|---|\n| 团检基础与常规成人 | 无症状者不把颈椎 X 线或 MRI 当作常规团检筛查。稳定的颈肩痛先问症状和功能，由临床评估。影像描述不能独立解释头晕。 |\n| 高风险与选择性评估 | 持续上肢根性症状或客观神经功能异常，由医生判断颈椎 MRI 是否改变管理。疑外伤、感染或肿瘤按相应临床路径选择影像；体检加项不能替代急症分流。 |\n| 已确诊或在治疗 | 对接受保守管理者关注疼痛、上肢功能、睡眠工作和神经症状变化。对既往手术或已明确脊髓病变者按专科计划。 |\n\n## 读结果时问自己\n\n这个发现能说明什么？历年变化、症状和用药是否会影响判断？下一次检查需要回答什么问题？\n\n## 异常分流\n\n颈椎曲度变直、骨赘或轻度突出是影像描述。解释时核对症状部位和客观体征；没有对应症状的偶然异常不等于临床颈椎病。进行性肢体无力、手部不灵活伴步态改变要考虑脊髓受累，优先评估。急性明显外伤或神经缺损按急诊路径。"
+    },
+    {
+      "kind": "随访工具",
+      "title": "颈椎常见问题与颈肩痛｜复查随访与闭环记录",
+      "content": "| 状态 | 复查项目、复诊或转介时点 |\n|---|---|\n| 首次异常 | 当次核对神经警示；有进行性异常尽快专科评估 |\n| 高风险未确诊 | 持续颈肩痛或根性症状按功能影响安排门诊 |\n| 已确诊未控制或出现变化 | 带上神经症状、活动及既往影像记录 |\n| 已确诊且稳定 | 追踪功能和新警示，影像按临床问题决定 |\n\n| 待办 | 填写 |\n|---|---|\n| 当前风险和待确认问题 | ____ |\n| 复查项目、截止日、负责岗位 | ____ |\n| 异常结果回收、医生复核和下一步 | ____ |\n| 联系状态及升级记录 | ____ |\n| 完成日期与回执位置 | ____ |"
+    }
+  ],
+  "chronic": {
+    "slug": "cervical-spine",
+    "name": "颈椎常见问题与颈肩痛",
+    "sort_order": 12,
+    "sections": {
+      "precheck": "### 检前问什么\n\n记录外伤、起病速度、颈肩痛与上肢放射的关系、麻木分布、力量下降、手部精细动作改变、步态不稳、发热、肿瘤史。进行性无力、手笨伴步态异常或近期明显外伤应及时进入临床评估。\n\n### 客户沟通\n\n> “片子上的退变描述需要和实际症状、力量和步态一起看。我们先判断有没有神经受累线索，再决定是否需要进一步检查。”\n\n**演练**：用第一道案例模拟问询，分别写出可以进入常规检查、须临时调整项目和需要先临床评估时的下一步。",
+      "design": "| 人群 | 项目与决策 |\n|---|---|\n| 团检基础与常规成人 | 无症状者不把颈椎 X 线或 MRI 当作常规团检筛查。稳定的颈肩痛先问症状和功能，由临床评估。影像描述不能独立解释头晕。 |\n| 高风险与选择性评估 | 持续上肢根性症状或客观神经功能异常，由医生判断颈椎 MRI 是否改变管理。疑外伤、感染或肿瘤按相应临床路径选择影像；体检加项不能替代急症分流。 |\n| 已确诊或在治疗 | 对接受保守管理者关注疼痛、上肢功能、睡眠工作和神经症状变化。对既往手术或已明确脊髓病变者按专科计划。 |\n\n**自学思考**：比较常规项目、选择性加项和已有疾病监测。找出一项只有在特定条件下才会改变判断的检查，并对照指南适用人群。\n\n**依据**：[中国颈椎退行性病变诊疗指南（2025版）](https://medtion-image.medtion.com/uploads/1/file/public/202601/20260108162411_9u47jwmdqv.pdf)；[ACR Appropriateness Criteria: Cervical Pain or Cervical Radiculopathy 2024 Update](https://pubmed.ncbi.nlm.nih.gov/40409873/)；[Suspected neurological conditions: recognition and referral（NG127）](https://www.nice.org.uk/guidance/ng127)。",
+      "interpretation": "颈椎曲度变直、骨赘或轻度突出是影像描述。解释时核对症状部位和客观体征；没有对应症状的偶然异常不等于临床颈椎病。进行性肢体无力、手部不灵活伴步态改变要考虑脊髓受累，优先评估。急性明显外伤或神经缺损按急诊路径。\n\n**自学思考**：本次异常能提示什么？还缺哪些证据？哪些发现会改变复查或就医的紧迫性？\n\n**依据**：[中国颈椎退行性病变诊疗指南（2025版）](https://medtion-image.medtion.com/uploads/1/file/public/202601/20260108162411_9u47jwmdqv.pdf)；[ACR Appropriateness Criteria: Cervical Pain or Cervical Radiculopathy 2024 Update](https://pubmed.ncbi.nlm.nih.gov/40409873/)；[Suspected neurological conditions: recognition and referral（NG127）](https://www.nice.org.uk/guidance/ng127)。",
+      "followup": "偶然影像发现且没有症状，说明结果与关注信号；有症状者按体征约门诊或康复。新发或进展无力、步态变化等优先评估，记录临床接收和后续计划；仅当新检查能改变决策时考虑重复影像。\n\n| 状态 | 复查项目、复诊或转介时点 |\n|---|---|\n| 首次异常 | 当次核对神经警示；有进行性异常尽快专科评估 |\n| 高风险未确诊 | 持续颈肩痛或根性症状按功能影响安排门诊 |\n| 已确诊未控制或出现变化 | 带上神经症状、活动及既往影像记录 |\n| 已确诊且稳定 | 追踪功能和新警示，影像按临床问题决定 |\n\n**院内执行**：负责医生确认紧迫性和项目，管理人员登记预约并回收结果。未回应时依本院规则重联，按风险交回负责医生，记录失访及处理结论。收到检验或就诊回执、医生确认下一步并告知受检者后，更新闭环状态。\n\n| 待办 | 填写 |\n|---|---|\n| 当前风险和待确认问题 | ____ |\n| 复查项目、截止日、负责岗位 | ____ |\n| 异常结果回收、医生复核和下一步 | ____ |\n| 联系状态及升级记录 | ____ |\n| 完成日期与回执位置 | ____ |"
+    },
+    "guidelines": "| 指南及发布信息 | 适用范围 | 核验日 |\n|---|---|---|\n| [中国颈椎退行性病变诊疗指南（2025版）](https://medtion-image.medtion.com/uploads/1/file/public/202601/20260108162411_9u47jwmdqv.pdf) · 指南制订专家组·中华疼痛学杂志 · 2025-08 | 颈椎退行性病变及症状评估 | 2026-11-18 |\n| [ACR Appropriateness Criteria: Cervical Pain or Cervical Radiculopathy 2024 Update](https://pubmed.ncbi.nlm.nih.gov/40409873/) · American College of Radiology · 2024修订，2025发表 | 颈痛与神经根症状的影像适宜性 | 2026-11-18 |\n| [Suspected neurological conditions: recognition and referral（NG127）](https://www.nice.org.uk/guidance/ng127) · NICE · 在线修订版 | 成人神经警示与转介 | 2026-11-18 |\n\n### 中外对照与精读任务\n\n精读 ACR 2024 影像适宜性中无危险信号的颈痛和慢性根性症状两个场景，再对照中国2025颈椎退行性病变指南及 NICE NG127 对步态、手笨等转诊警示。ACR 的适宜性表面向有症状或临床疑问的人群，不能作为无症状团检采购清单；国内院内检查和转诊路径需确认。\n\n**输出**：用两栏写下两份指南各自回答的临床问题，并圈出一处会改变本院报告、项目或转诊的判断。查不到原刊条款、具体日期或全文时保留待核验状态。",
+    "revision_notes": "个人循证自学版：调整研修任务与解读工具。",
+    "affected_decisions": "学习重点为理解异常、证据的适用性及长期管理。"
+  }
+}
